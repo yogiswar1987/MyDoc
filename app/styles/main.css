@@ -1,0 +1,42 @@
+@media (max-width: 599px) {
+  .login-sm {
+    box-shadow: none !important;
+  }
+}
+@media (min-width: 600px) {
+  .top-padding{
+    padding-top: 15%;
+  }
+}
+
+.whiteframedemoBasicClassUsage {
+  /* For breakpoint `-xs` */
+  /* For breakpoint `-sm` */
+  /* For breakpoint `-md` */
+  /* For breakpoint `-gt-md` */ }
+.whiteframedemoBasicClassUsage md-whiteframe {
+  background: #fff;
+  margin: 30px; }
+@media (max-width: 599px) {
+  .whiteframedemoBasicClassUsage md-whiteframe {
+    margin: 7px;
+    background-color: #c8e4fa; }
+  .whiteframedemoBasicClassUsage md-whiteframe > span {
+    font-size: 0.4em; } }
+@media (min-width: 600px) and (max-width: 959px) {
+  .whiteframedemoBasicClassUsage md-whiteframe {
+    margin: 20px; }
+  .whiteframedemoBasicClassUsage md-whiteframe > span {
+    font-size: 0.6em; } }
+@media (min-width: 960px) and (max-width: 1279px) {
+  .whiteframedemoBasicClassUsage md-whiteframe {
+    margin: 20px;
+    background-color: #fcddde; }
+  .whiteframedemoBasicClassUsage md-whiteframe > span {
+    font-size: 0.9em; } }
+@media (min-width: 1280px) {
+  .whiteframedemoBasicClassUsage md-whiteframe {
+    margin: 25px;
+    background-color: #F2FCE2; }
+  .whiteframedemoBasicClassUsage md-whiteframe > span {
+    font-size: 1.0em; } }

@@ -1,0 +1,29 @@
+<md-content class="md-padding md-margin" flex layout="column">
+  <form name="loginForm" novalidate>
+    <md-input-container class="md-block">
+      <label>EmailAddress</label>
+      <input type="email" ng-model="username" name="email" required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
+
+      <div ng-messages="loginForm.email.$error" md-auto-hide="false" ng-show="loginForm.email.$touched">
+        <div ng-message="required">Email is required.</div>
+        <div ng-message="pattern">Invalid Email.</div>
+        <div ng-message="minlength">Email has to be more than 10 characters.</div>
+        <div ng-message="maxlength">Email has to be less than 100 characters.</div>
+      </div>
+    </md-input-container>
+    <md-input-container class="md-block">
+      <label>Password</label>
+      <input type="password" ng-model="password" name="password" required minlength="8"/>
+
+      <div ng-messages="loginForm.password.$error" md-auto-hide="false" ng-show="loginForm.password.$touched">
+        <div ng-message="required">This is required.</div>
+        <div ng-message="minlength">Password has to be more than 8 characters.</div>
+      </div>
+    </md-input-container>
+    <div layout="row" layout-align="center center">
+      <md-button class="md-raised md-primary" ng-click="login(loginForm)">Login</md-button>
+      <div flex></div>
+      <md-button href="" md-no-ink="md-no-ink">Forgot Password</md-button>
+    </div>
+  </form>
+</md-content>
