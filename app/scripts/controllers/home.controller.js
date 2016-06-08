@@ -5,7 +5,7 @@ angular.module('MyDoctorApp')
 
     /*$scope.items = [1, 2, 3, 4, 5];*/
 
-    $scope.linrOptions = {
+    $scope.lineOptions = {
       chart: {
         type: 'lineChart',
         height: function () {
@@ -318,7 +318,8 @@ angular.module('MyDoctorApp')
           horizontalOff: false,
           verticalOff: true,
           unzoomEventType: 'dblclick.zoom'
-        }
+        },
+        showLegend: false
       },title: {
         enable: true,
         html: '<h1>Title for Line Chart</h1>'
