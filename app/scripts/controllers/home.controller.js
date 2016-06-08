@@ -285,7 +285,7 @@ angular.module('MyDoctorApp')
           if (window.innerWidth > 600)
             return window.innerWidth / 3;
           else
-            return window.innerWidth/2;
+            return window.innerWidth;
         }(),
         margin : {
           top: 20,
@@ -378,7 +378,7 @@ angular.module('MyDoctorApp')
           if (window.innerWidth > 600)
             return window.innerWidth / 3;
           else
-            return window.innerWidth/2;
+            return window.innerWidth;
         }(),
         margin: {
           top: 30,
