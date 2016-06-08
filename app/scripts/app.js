@@ -7,7 +7,8 @@ angular.module('MyDoctorApp', [
     'ngSanitize',
     'ui.router',
     'ngMessages',
-    'ngMaterial'
+    'ngMaterial',
+    'nvd3'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     //delete $httpProvider.defaults.headers.common['X-Requested-With'];
@@ -19,10 +20,10 @@ angular.module('MyDoctorApp', [
         templateUrl: "views/app.html",
         controller: "AppCtrl"
       }).state('app.home', {
-        url: "/home",
-        templateUrl: "views/home.html",
-        controller: "HomeCtrl"
-      }).state('app.appointment', {
+      url: "/home",
+      templateUrl: "views/home.html",
+      controller: "HomeCtrl"
+    }).state('app.appointment', {
         url: "/appointment",
         templateUrl: "views/appointment.html",
         controller: "AppointmentCtrl"

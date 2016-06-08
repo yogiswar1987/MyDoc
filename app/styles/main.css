@@ -16,27 +16,42 @@
   /* For breakpoint `-gt-md` */ }
 .whiteframedemoBasicClassUsage md-whiteframe {
   background: #fff;
-  margin: 30px; }
+  margin: 30px;
+  min-height: 250px;
+  min-width: 250px;
+}
 @media (max-width: 599px) {
   .whiteframedemoBasicClassUsage md-whiteframe {
     margin: 7px;
-    background-color: #c8e4fa; }
+    background-color: #c8e4fa;
+    min-height: 250px;
+    min-width: 250px;
+  }
   .whiteframedemoBasicClassUsage md-whiteframe > span {
     font-size: 0.4em; } }
 @media (min-width: 600px) and (max-width: 959px) {
   .whiteframedemoBasicClassUsage md-whiteframe {
-    margin: 20px; }
+    margin: 20px;
+    min-height: 250px;
+    min-width: 250px;
+  }
   .whiteframedemoBasicClassUsage md-whiteframe > span {
     font-size: 0.6em; } }
 @media (min-width: 960px) and (max-width: 1279px) {
   .whiteframedemoBasicClassUsage md-whiteframe {
     margin: 20px;
-    background-color: #fcddde; }
+    background-color: #fcddde;
+    min-height: 250px;
+    min-width: 250px;
+  }
   .whiteframedemoBasicClassUsage md-whiteframe > span {
     font-size: 0.9em; } }
 @media (min-width: 1280px) {
   .whiteframedemoBasicClassUsage md-whiteframe {
     margin: 25px;
-    background-color: #F2FCE2; }
+    background-color: #F2FCE2;
+    min-height: 250px;
+    min-width: 250px;
+  }
   .whiteframedemoBasicClassUsage md-whiteframe > span {
     font-size: 1.0em; } }

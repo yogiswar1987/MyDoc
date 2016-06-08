@@ -1,7 +1,27 @@
-<div layout="row" layout-padding layout-wrap layout-fill style="padding-bottom: 32px;" ng-cloak class="whiteframedemoBasicClassUsage" >
+<section layout="row"  layout-align="center center">
+  <div  layout="column" layout-fill class="md-padding md-margin">
+    <md-whiteframe class="md-whiteframe-1dp">
+      <nvd3 id="dashPieGraph" options="linrOptions" data="lineData"></nvd3>
+    </md-whiteframe>
+  </div>
+</section>
+<section layout-xs="column" layout-gt-xs="row" layout-align="center center">
+  <div layout-gt-xs="column" layout-xs="column" layout-fill class="md-padding md-margin">
+    <md-whiteframe class="md-whiteframe-1dp">
+      <nvd3 id="dashPieGraph1" options="options" data="data"></nvd3>
+    </md-whiteframe>
+  </div>
+  <div layout-gt-xs="column" layout-xs="column" layout-fill class="md-padding md-margin">
+    <md-whiteframe class="md-whiteframe-1dp">
+      <nvd3 id="PieGraph1" options="line1Options" data="line1Data"></nvd3>
+    </md-whiteframe>
+  </div>
+</section>
+<!--<div layout="row" layout-align="center center" layout-padding layout-wrap layout-fill style="padding-bottom: 32px;" ng-cloak
+     class="whiteframedemoBasicClassUsage">
   <a ng-repeat="item in items" href="#/app/appointment">
-  <md-whiteframe class="md-whiteframe-{{item}}dp"  layout layout-align="center center">
-    <h1>.md-whiteframe-{{item}}dp</h1>
-  </md-whiteframe>
+    <md-whiteframe class="md-whiteframe-{{item}}dp" layout layout-align="center center">
+      <h1>.md-whiteframe-{{item}}dp</h1>
+    </md-whiteframe>
   </a>
-</div>
+</div>-->
