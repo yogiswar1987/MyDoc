@@ -1,11 +1,12 @@
-<md-sidenav layout="column"  class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left"
+            md-is-locked-open="$mdMedia('gt-sm')">
   <md-toolbar>
     <div class="md-body-1">email@domainname.com</div>
   </md-toolbar>
   <md-list>
     <md-list-item class="md-2-line" ng-repeat="item in menu" role="link" md-ink-ripple>
       <div style="margin:auto;padding-right: 5px">
-      <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
+        <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
       </div>
       <div class="md-list-item-text">
         <span class="md-body-2">{{item.title}}</span>
@@ -15,8 +16,8 @@
     <md-subheader class="md-no-sticky">Management</md-subheader>
     <md-list-item class="md-2-line" ng-repeat="item in admin" role="link" md-ink-ripple>
       <div style="margin:auto;padding-right: 5px">
-      <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
-        </div>
+        <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
+      </div>
       <div class="md-list-item-text">
         <span class="md-body-2">{{item.title}}</span>
       </div>
@@ -24,7 +25,7 @@
   </md-list>
 </md-sidenav>
 
-<div  layout="column" class="relative" layout-fill role="main" >
+<div layout="column" class="relative" layout-fill role="main">
   <md-toolbar class="animate-show md-whiteframe-z1">
     <div class="md-toolbar-tools">
       <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-sm aria-label="Menu">
@@ -40,4 +41,4 @@
 
     </ui-view>
   </md-content>
-  </div>
+</div>
