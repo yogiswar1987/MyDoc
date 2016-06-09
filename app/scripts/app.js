@@ -28,6 +28,10 @@ angular.module('MyDoctorApp', [
         url: "/appointment",
         templateUrl: "views/appointment.html",
         controller: "AppointmentCtrl"
+      }).state('app.appointments', {
+        url: "/appointments",
+        templateUrl: "views/appointments.html",
+        controller: "AppointmentsCtrl"
       })
 
       //Authentication Pages

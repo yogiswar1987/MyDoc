@@ -9,18 +9,18 @@ angular.module('MyDoctorApp')
     // Menu items
     $scope.menu = [
       {
-        link: '',
+        link: 'app/home',
         title: 'Dashboard',
         icon: 'action:ic_dashboard_24px' // we have to use Google's naming convention for the IDs of the SVGs in the spritesheet
       },
       {
-        link: '',
-        title: 'Friends',
+        link: 'app/appointments',
+        title: 'Appointments',
         icon: 'social:ic_group_24px'
       },
       {
-        link: '',
-        title: 'Messages',
+        link: 'app/collaboration',
+        title: 'Collaboration',
         icon: 'communication:ic_message_24px'
       }
     ];
@@ -37,4 +37,8 @@ angular.module('MyDoctorApp')
       }
     ];
 
+    $scope.navigate = function (path) {
+      $location.path(path);
+      console.log(path);
+    }
   }]);
