@@ -17,42 +17,42 @@ angular.module('MyDoctorApp', [
       .otherwise('/auth/login');
     $stateProvider
       .state('app', {
-        url: "/app",
-        templateUrl: "views/app.html",
-        controller: "AppCtrl"
+        url: '/app',
+        templateUrl: 'views/app.html',
+        controller: 'AppCtrl'
       }).state('app.home', {
-      url: "/home",
-      templateUrl: "views/home.html",
-      controller: "HomeCtrl"
+      url: '/home',
+      templateUrl: 'views/home.html',
+      controller: 'HomeCtrl'
     }).state('app.appointment', {
-      url: "/appointment",
-      templateUrl: "views/appointment.html",
-      controller: "AppointmentCtrl"
+      url: '/appointment',
+      templateUrl: 'views/appointment.html',
+      controller: 'AppointmentCtrl'
     }).state('app.appointments', {
-      url: "/appointments",
-      templateUrl: "views/appointments.html",
-      controller: "AppointmentsCtrl"
+      url: '/appointments',
+      templateUrl: 'views/appointments.html',
+      controller: 'AppointmentsCtrl'
     }).state('app.appointments.list', {
-        url: "/list",
-        templateUrl: "views/appointments-list.html",
-        controller: "AppointmentsListCtrl"
+        url: '/list',
+        templateUrl: 'views/appointments-list.html',
+        controller: 'AppointmentsListCtrl'
       })
-     .state('app.appointments.create', {
-        url: "/create",
-        templateUrl: "views/create-appointment.html",
-        controller: "CreateAppointmentCtrl"
-       })
+      .state('app.appointments.create', {
+        url: '/create',
+        templateUrl: 'views/create-appointment.html',
+        controller: 'CreateAppointmentCtrl'
+      })
 
       //Authentication Pages
       .state('auth', {
-        "abstract": true,
-        url: "/auth",
-        templateUrl: "views/auth.html"
+        'abstract': true,
+        url: '/auth',
+        templateUrl: 'views/auth.html'
       }).state('auth.login', {
-        url: "/login",
-        templateUrl: "views/login.html",
-        controller: "LoginCtrl"
-      });
+      url: '/login',
+      templateUrl: 'views/login.html',
+      controller: 'LoginCtrl'
+    });
 
     $mdIconProvider
     // linking to https://github.com/google/material-design-icons/tree/master/sprites/svg-sprite

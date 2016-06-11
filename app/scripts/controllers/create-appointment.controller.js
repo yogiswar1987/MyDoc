@@ -3,7 +3,7 @@
 angular.module('MyDoctorApp')
   .controller('CreateAppointmentCtrl', ['$scope', '$location', function ($scope, $location) {
 
-    $scope.$parent.selectedIndex=0;
+    $scope.$parent.selectedIndex = 0;
     $scope.user = {
       title: 'patient',
       email: 'ipsum@lorem.com',

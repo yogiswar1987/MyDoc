@@ -5,13 +5,13 @@ angular.module('MyDoctorApp')
 
     $scope.selectedIndex = 0;
 
-    $scope.$watch('selectedIndex', function(current, old) {
+    $scope.$watch('selectedIndex', function (current, old) {
       switch (current) {
         case 0:
-          $location.url("app/appointments/create");
+          $location.url('app/appointments/create');
           break;
         case 1:
-          $location.url("app/appointments/list");
+          $location.url('app/appointments/list');
           break;
 
       }
