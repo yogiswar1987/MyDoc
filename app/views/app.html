@@ -4,7 +4,7 @@
     <div class="md-body-1" style="margin: auto">RAVI KIRAN</div>
   </md-toolbar>
   <md-list>
-    <md-list-item class="md-2-line" ng-repeat="item in menu" role="link" md-ink-ripple ng-click="navigate(item.link)">
+    <md-list-item class="md-2-line" ng-repeat="item in menu" role="link" md-ink-ripple ng-click="navigate(item.link)" ng-if="item.rolesAllowed | contains:role">
       <div style="margin:auto;padding-right: 5px">
         <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
       </div>

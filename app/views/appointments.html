@@ -1,8 +1,6 @@
-<div layout="row" layout-align="center center" layout-padding layout-wrap layout-fill style="padding-bottom: 32px;" ng-cloak
-     class="whiteframedemoBasicClassUsage">
-  <a ng-repeat="item in items" href="#/app/appointment">
-    <md-whiteframe class="md-whiteframe-{{item}}dp" layout layout-align="center center">
-      <h1 class="md-padding md-margin">User{{item}} Detail</h1>
-    </md-whiteframe>
-  </a>
-</div>
+<md-tabs
+         md-selected="selectedIndex"  >
+  <md-tab>  <a href>Create Appointment</a> </md-tab>
+  <md-tab>  <a href>Appointments</a> </md-tab>
+</md-tabs>
+<div id="content" ui-view></div>

@@ -3,13 +3,10 @@
     box-shadow: none !important;
   }
 }
-
-@media (min-width: 600px) {
-  .top-padding {
-    padding-top: 15%;
-  }
+body{
+  min-width: 320px;
+  min-height: 320px;
 }
-
 md-backdrop.md-opaque.ng-enter {
   opacity: .48;
 }

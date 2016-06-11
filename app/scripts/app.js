@@ -25,22 +25,30 @@ angular.module('MyDoctorApp', [
       templateUrl: "views/home.html",
       controller: "HomeCtrl"
     }).state('app.appointment', {
-        url: "/appointment",
-        templateUrl: "views/appointment.html",
-        controller: "AppointmentCtrl"
-      }).state('app.appointments', {
-        url: "/appointments",
-        templateUrl: "views/appointments.html",
-        controller: "AppointmentsCtrl"
+      url: "/appointment",
+      templateUrl: "views/appointment.html",
+      controller: "AppointmentCtrl"
+    }).state('app.appointments', {
+      url: "/appointments",
+      templateUrl: "views/appointments.html",
+      controller: "AppointmentsCtrl"
+    }).state('app.appointments.list', {
+        url: "/list",
+        templateUrl: "views/appointments-list.html",
+        controller: "AppointmentsListCtrl"
       })
+     .state('app.appointments.create', {
+        url: "/create",
+        templateUrl: "views/create-appointment.html",
+        controller: "CreateAppointmentCtrl"
+       })
 
       //Authentication Pages
       .state('auth', {
         "abstract": true,
         url: "/auth",
         templateUrl: "views/auth.html"
-      })
-      .state('auth.login', {
+      }).state('auth.login', {
         url: "/login",
         templateUrl: "views/login.html",
         controller: "LoginCtrl"
@@ -69,7 +77,11 @@ angular.module('MyDoctorApp', [
       .iconSet('avatars', 'https://raw.githubusercontent.com/angular/material/master/docs/app/icons/avatar-icons.svg', 24)
       .defaultIconSet('https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-action.svg', 24);
 
-  });
+  }).filter('contains', function () {
+  return function (array, needle) {
+    return array.indexOf(needle) >= 0;
+  };
+});
 
 
 
