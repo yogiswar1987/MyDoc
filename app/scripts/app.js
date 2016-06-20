@@ -9,7 +9,9 @@ angular.module('MyDoctorApp', [
     'ngMessages',
     'ngMaterial',
     'nvd3',
-    'ngMdIcons'
+    'ngMdIcons',
+    'mwl.calendar',
+    'ui.bootstrap'
   ])
   .config(function ($stateProvider, $urlRouterProvider, $mdIconProvider) {
     //delete $httpProvider.defaults.headers.common['X-Requested-With'];
@@ -40,7 +42,8 @@ angular.module('MyDoctorApp', [
       .state('app.appointments.create', {
         url: '/create',
         templateUrl: 'views/create-appointment.html',
-        controller: 'CreateAppointmentCtrl'
+        controller: 'CreateAppointmentCtrl',
+        controllerAs: 'vm'
       })
 
       //Authentication Pages
